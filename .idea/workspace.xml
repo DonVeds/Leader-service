@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="85e3b2ba-8882-43e5-8298-8ba76dae4f3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/normalize.scss/_normalize.scss" afterPath="$PROJECT_DIR$/sass/normalize.scss/_normalize.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,8 +35,8 @@
       <file leaf-file-name="main.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="506">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -244,7 +242,7 @@
       <workItem from="1502039481636" duration="424000" />
       <workItem from="1502106397210" duration="2580000" />
       <workItem from="1502108999997" duration="7051000" />
-      <workItem from="1502178868734" duration="304000" />
+      <workItem from="1502178868734" duration="441000" />
     </task>
     <task id="LOCAL-00001" summary="delete analytics">
       <created>1502106891794</created>
@@ -281,11 +279,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502135347798</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="almost ready">
+      <created>1502179247601</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1502179247601</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17145000" />
+    <option name="totallyTimeSpent" value="17282000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,7 +336,8 @@
     <MESSAGE value="add git, bourbon" />
     <MESSAGE value="cleaning" />
     <MESSAGE value="start working" />
-    <option name="LAST_COMMIT_MESSAGE" value="start working" />
+    <MESSAGE value="almost ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost ready" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -569,8 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="506">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
