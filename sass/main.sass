@@ -1,0 +1,241 @@
+@import "vars"
+@import "susy"
+@import "normalize.scss/normalize"
+
+body
+    margin: 0
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+    background-color: white
+
+a
+    color: #000
+
+
+.header
+    font-family: $bold-font
+    background-color: #fff
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)
+    position: fixed
+    width: 100%
+    z-index: 600
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+        overflow: hidden
+        background-color: #fff
+    li a
+        display: block
+        padding: 20px 20px
+        border-right: 1px solid #f4f4f4
+        text-decoration: none
+        &:hover
+            background-color: #f4f4f4
+    .menu-btn:hover
+        background-color: #f4f4f4
+    .logo
+        display: block
+        float: left
+        font-size: 2em
+        padding: 10px
+        text-decoration: none
+    .menu
+        clear: both
+        max-height: 0
+        transition: max-height .2s ease-out
+    .menu-icon
+        cursor: pointer
+        display: inline-block
+        float: right
+        padding: 28px 20px
+        position: relative
+        user-select: none
+        .navicon
+            background: #333
+            display: block
+            height: 2px
+            position: relative
+            transition: background .2s ease-out
+            width: 18px
+            &:before, &:after
+                background: #333
+                content: ''
+                display: block
+                height: 100%
+                position: absolute
+                transition: all .2s ease-out
+                width: 100%
+            &:before
+                top: 5px
+            &:after
+                top: -5px
+    .menu-btn
+        display: none
+        &:checked ~ .menu
+            max-height: 240px
+            .menu-icon
+                .navicon
+                    background: transparent
+                    &:before
+                        transform: rotate(-45deg)
+                    &:after
+                        transform: rotate(45deg)
+                &:not(.steps) .navicon
+                    &:before, &:after
+                        top: 0
+
+
+
+.section
+    overflow: hidden
+    margin: auto
+    max-width: 1400px
+    a
+        position: relative
+        float: left
+        width: 100%
+        img
+            width: 100%
+            display: block
+        span
+            color: #fff
+            position: relative
+            left: 5%
+            bottom: 5%
+            font-size: 2em
+            text-shadow: 1px 1px 0 #000
+
+.section-split a
+    span
+        display: none
+    &:hover span
+        display: block
+
+
+.main
+    @include span(12 nest)
+    &_photo
+        width: 100%
+.main-col
+    @include span(12 nest)
+
+.none
+    margin: 0
+    opacity: 0
+    display: none
+
+@media (min-width: 1009px)
+    .section-split a
+        width: 50%
+    .header
+        li
+            float: left
+            a
+                padding: 20px 30px
+        .menu
+            clear: none
+            float: right
+            max-height: none
+        .menu-icon
+            display: none
+    .none
+        display: block
+
+
+
+
+
+.plate-board
+
+    position: relative
+    bottom: 50px
+    margin: 0 10%
+
+.plate
+    z-index: 300
+    @include span(4)
+    background-color: $accent
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    .desc
+        z-index: 400
+        position: relative
+        bottom: 20px
+        p
+            text-align: center
+            color: white
+        a
+            text-decoration: none
+            color: silver
+    &_dec
+        width: 48px
+        height: 48px
+        background-color: $accent
+        border-radius: 100px
+        position: relative
+        top: -20px
+        color: white
+        i
+            position: relative
+            left: 22%
+            top: 17%
+    &:nth-child(3)
+        .plate_dec
+            i
+                left: 30%
+    .bg-fa
+        z-index: 350
+        position: absolute
+        color: white
+        opacity: 0.1
+
+@media (max-width: 762px)
+    .plate-board
+        margin: 0
+
+.services
+    background-color: darken(white, 5)
+    margin-top: 30px
+    @include span(12)
+    &-left
+        @include span(3)
+    &-mid
+        @include span(6)
+    &-right
+        @include span(3)
+
+
+.diagnostic
+    width: 70px
+    height: 70px
+    &-rev
+        width: 70px
+        height: 70px
+        float: right
+    &-m
+        vertical-align: center
+.cap
+    float: right
+
+
+.headliner
+    font-family: $bold-font
+    font-size: 3em
+    text-align: center
+    margin: 3% 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
