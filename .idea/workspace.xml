@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85e3b2ba-8882-43e5-8298-8ba76dae4f3f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/fonts/RobotoRegular/RobotoRegular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/fonts/RobotoRegular/RobotoRegular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/fonts/RobotoRegular/RobotoRegular.woff" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_vars.sass" afterPath="$PROJECT_DIR$/sass/_vars.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/main.sass" afterPath="$PROJECT_DIR$/sass/main.sass" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,9 +27,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="103" column="34" lean-forward="false" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="709">
+              <caret line="124" column="49" lean-forward="false" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
+              <folding>
+                <element signature="e#6279#6285#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,8 +39,8 @@
       <file leaf-file-name="main.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1661">
-              <caret line="299" column="29" lean-forward="true" selection-start-line="299" selection-start-column="29" selection-end-line="299" selection-end-column="29" />
+            <state relative-caret-position="817">
+              <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -280,7 +278,7 @@
       <workItem from="1502267221288" duration="20432000" />
       <workItem from="1502361714251" duration="2700000" />
       <workItem from="1502389309455" duration="13189000" />
-      <workItem from="1502453236329" duration="17505000" />
+      <workItem from="1502453236329" duration="19329000" />
     </task>
     <task id="LOCAL-00001" summary="delete analytics">
       <created>1502106891794</created>
@@ -394,11 +392,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502483135411</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="totally finish first block add second one">
+      <created>1502487498954</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1502487498954</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90070000" />
+    <option name="totallyTimeSpent" value="91894000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,14 +458,14 @@
     <MESSAGE value="add title" />
     <MESSAGE value="add first block" />
     <MESSAGE value="finish first block add second one" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish first block add second one" />
+    <MESSAGE value="totally finish first block add second one" />
+    <option name="LAST_COMMIT_MESSAGE" value="totally finish first block add second one" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/main.css" />
     <entry file="file://$PROJECT_DIR$/css/main.css" />
     <entry file="file://$PROJECT_DIR$/../My_4_work/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -493,7 +498,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="e#6279#6285#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -663,18 +670,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../DonVeds_5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <element signature="e#1536#1542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="103" column="34" lean-forward="false" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="709">
+          <caret line="124" column="49" lean-forward="false" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
+          <folding>
+            <element signature="e#6279#6285#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1661">
-          <caret line="299" column="29" lean-forward="true" selection-start-line="299" selection-start-column="29" selection-end-line="299" selection-end-column="29" />
+        <state relative-caret-position="817">
+          <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="24" />
           <folding />
         </state>
       </provider>
