@@ -11,7 +11,7 @@ a
     color: #000
 
 
-.header
+.header //меню с гамбургером
     font-family: $bold-font
     background-color: #fff
     box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.3)
@@ -113,19 +113,6 @@ a
         display: none
     &:hover span
         display: block
-
-
-.main
-    margin-top: 60px
-    @include span(12 nest)
-    &_photo
-        width: 100%
-
-.none
-    margin: 0
-    opacity: 0
-    display: none
-
 @media (min-width: 1031px)
     .section-split a
         width: 50%
@@ -140,12 +127,27 @@ a
             max-height: none
         .menu-icon
             display: none
+
+
+.main
+    margin-top: 60px
+    @include span(12 nest)
+    &_photo
+        width: 100%
+
+//Ничего
+
+.none
+    margin: 0
+    opacity: 0
+    display: none
+
+
 @media (min-width: 977px)
     .none
         display: block
 
-
-
+//Ничего нужно для поддержания оптимальной высоты для plate №3
 
 
 .plate-board
@@ -193,7 +195,9 @@ a
         position: absolute
         color: white
         opacity: 0.1
+//"fa" - font awesome
 
+//Блок с картинками услуг и их перечнем
 
 .services
     margin-top: 30px
@@ -215,27 +219,10 @@ a
     &-block
         @include span(12)
         margin-bottom: 10px
+    p
+        font-weight: 600
 
-
-
-
-
-
-@media (max-width: 836px)
-    .diagnostic-m
-        margin-top: 40%
-    .plate-board
-        margin: 0
-    .services
-        &-left
-            @include span(5)
-        &-mid
-            @include span(2)
-            visibility: hidden
-        &-right
-            @include span(5)
-        &-block
-            height: 95px
+//Заголовки
 
 .headliner
     background-color: black
@@ -245,6 +232,8 @@ a
     text-align: center
     margin: 3% 0
 
+//О нас
+
 .about
     @include span(12)
     margin: 0
@@ -253,8 +242,21 @@ a
         width: 100%
     .headliner
         margin:
+            top: 0
             right: 10%
             left: 10%
+    &-none
+        visibility: hidden
+        @include span(7)
+        position: relative
+        bottom: 500px
+    &-desc
+        @include span(5)
+        position: relative
+        bottom: 500px
+        background-color: white
+
+//Основной блок с media изменениями после 836px
 
 @media (max-width: 836px)
     .diagnostic-m
@@ -276,6 +278,28 @@ a
             margin:
                 right: 0
                 left: 0
+        .diagnostic-m
+            margin-top: 40%
+    .plate-board
+        margin: 0
+    .services
+        &-left
+            @include span(5)
+        &-mid
+            @include span(2)
+            visibility: hidden
+        &-right
+            @include span(5)
+        &-block
+            height: 95px
+    .about
+        &-none
+            display: none
+        &-desc
+            @include span(12)
+            position: inherit
+
+
 
 
 

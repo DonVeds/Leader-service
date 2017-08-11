@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85e3b2ba-8882-43e5-8298-8ba76dae4f3f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/fonts/RobotoRegular/RobotoRegular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/fonts/RobotoRegular/RobotoRegular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/fonts/RobotoRegular/RobotoRegular.woff" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_vars.sass" afterPath="$PROJECT_DIR$/sass/_vars.sass" />
@@ -28,8 +31,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="433">
+              <caret line="103" column="34" lean-forward="false" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -38,8 +41,28 @@
       <file leaf-file-name="main.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="277" column="23" lean-forward="false" selection-start-line="277" selection-start-column="23" selection-end-line="277" selection-end-column="23" />
+            <state relative-caret-position="1661">
+              <caret line="299" column="29" lean-forward="true" selection-start-line="299" selection-start-column="29" selection-end-line="299" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_vars.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_vars.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -55,26 +78,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_vars.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/_vars.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -82,6 +85,7 @@
       <find>on</find>
       <find>menuToggle</find>
       <find>head</find>
+      <find>none</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -276,7 +280,7 @@
       <workItem from="1502267221288" duration="20432000" />
       <workItem from="1502361714251" duration="2700000" />
       <workItem from="1502389309455" duration="13189000" />
-      <workItem from="1502453236329" duration="13138000" />
+      <workItem from="1502453236329" duration="17505000" />
     </task>
     <task id="LOCAL-00001" summary="delete analytics">
       <created>1502106891794</created>
@@ -383,11 +387,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502406626364</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="finish first block add second one">
+      <created>1502483135411</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1502483135411</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85703000" />
+    <option name="totallyTimeSpent" value="90070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,7 +452,8 @@
     <MESSAGE value="finish plates" />
     <MESSAGE value="add title" />
     <MESSAGE value="add first block" />
-    <option name="LAST_COMMIT_MESSAGE" value="add first block" />
+    <MESSAGE value="finish first block add second one" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish first block add second one" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -606,6 +618,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -618,14 +631,6 @@
     <entry file="file://$PROJECT_DIR$/app/css/font-awesome-4.7.0/HELP-US-OUT.txt" />
     <entry file="file://$PROJECT_DIR$/app/css/font-awesome-4.7.0/scss/font-awesome.scss" />
     <entry file="file://$PROJECT_DIR$/font-awesome-4.7.0/scss/_variables.scss" />
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/susy/language/susy/_span.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1380">
@@ -642,26 +647,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_vars.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="433">
+          <caret line="103" column="34" lean-forward="false" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="277" column="23" lean-forward="false" selection-start-line="277" selection-start-column="23" selection-end-line="277" selection-end-column="23" />
+        <state relative-caret-position="1661">
+          <caret line="299" column="29" lean-forward="true" selection-start-line="299" selection-start-column="29" selection-end-line="299" selection-end-column="29" />
           <folding />
         </state>
       </provider>
