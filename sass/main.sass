@@ -14,7 +14,7 @@ a
 .header
     font-family: $bold-font
     background-color: #fff
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.3)
     position: fixed
     width: 100%
     z-index: 600
@@ -34,11 +34,14 @@ a
     .menu-btn:hover
         background-color: #f4f4f4
     .logo
+        margin: 10px
         display: block
         float: left
         font-size: 2em
-        padding: 10px
+        padding: 0 10px
         text-decoration: none
+        color: white
+        background-color: black
     .menu
         clear: both
         max-height: 0
@@ -113,18 +116,17 @@ a
 
 
 .main
+    margin-top: 60px
     @include span(12 nest)
     &_photo
         width: 100%
-.main-col
-    @include span(12 nest)
 
 .none
     margin: 0
     opacity: 0
     display: none
 
-@media (min-width: 1009px)
+@media (min-width: 1031px)
     .section-split a
         width: 50%
     .header
@@ -138,6 +140,7 @@ a
             max-height: none
         .menu-icon
             display: none
+@media (min-width: 977px)
     .none
         display: block
 
@@ -191,40 +194,91 @@ a
         color: white
         opacity: 0.1
 
-@media (max-width: 762px)
-    .plate-board
-        margin: 0
 
 .services
-    background-color: darken(white, 5)
     margin-top: 30px
     @include span(12)
     &-left
-        @include span(3)
+        @include span(4)
+        img
+            @include span(4)
+        p
+            @include span(8)
     &-mid
-        @include span(6)
+        @include span(4)
     &-right
-        @include span(3)
+        @include span(4)
+        img
+            @include span(4)
+        p
+            @include span(8)
+    &-block
+        @include span(12)
+        margin-bottom: 10px
 
 
-.diagnostic
-    width: 70px
-    height: 70px
-    &-rev
-        width: 70px
-        height: 70px
-        float: right
-    &-m
-        vertical-align: center
-.cap
-    float: right
 
+
+
+
+@media (max-width: 836px)
+    .diagnostic-m
+        margin-top: 40%
+    .plate-board
+        margin: 0
+    .services
+        &-left
+            @include span(5)
+        &-mid
+            @include span(2)
+            visibility: hidden
+        &-right
+            @include span(5)
+        &-block
+            height: 95px
 
 .headliner
+    background-color: black
+    color: white
     font-family: $bold-font
     font-size: 3em
     text-align: center
     margin: 3% 0
+
+.about
+    @include span(12)
+    margin: 0
+    width: 100%
+    img
+        width: 100%
+    .headliner
+        margin:
+            right: 10%
+            left: 10%
+
+@media (max-width: 836px)
+    .diagnostic-m
+        margin-top: 40%
+    .plate-board
+        margin: 0
+    .services
+        &-left
+            @include span(5)
+        &-mid
+            @include span(2)
+            visibility: hidden
+        &-right
+            @include span(5)
+        &-block
+            height: 95px
+    .about
+        .headliner
+            margin:
+                right: 0
+                left: 0
+
+
+
 
 
 
