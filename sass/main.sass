@@ -1,11 +1,10 @@
 @import "vars"
 @import "susy"
-@import "normalize.scss/normalize"
 
 body
     margin: 0
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
-    background-color: white
+
 
 a
     color: #000
@@ -130,7 +129,7 @@ a
 
 
 .main
-    margin-top: 60px
+    margin-top: 58px
     @include span(12 nest)
     &_photo
         width: 100%
@@ -221,6 +220,7 @@ a
         margin-bottom: 10px
     p
         font-weight: 600
+        text-align: center
 
 //Заголовки
 
@@ -235,26 +235,77 @@ a
 //О нас
 
 .about
-    @include span(12)
-    margin: 0
-    width: 100%
+    @include span(10 nest)
+    margin: 0 10%
     img
-        width: 100%
+        @include span(6)
     .headliner
         margin:
             top: 0
-            right: 10%
-            left: 10%
-    &-none
-        visibility: hidden
-        @include span(7)
-        position: relative
-        bottom: 500px
     &-desc
-        @include span(5)
-        position: relative
-        bottom: 500px
+        @include span(6)
         background-color: white
+
+.sign-author
+    @include span(6)
+
+.sign
+    @include span(6)
+    width: 50px
+    height: 40px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer
+    font-size: 9px
+    @include span(12)
+    background-color: black
+    color: white
+    width: 100%
+    margin: 50px 0 0 0
+    a
+        color: white
+.footer-info
+    @include span(12)
+    ul
+        text-align: center
+        padding: 0
+        list-style: none
+        @include span(4 nest)
+        li
+            margin-bottom: 5px
+hr
+    @include span(12 nest)
+    border:
+        right: 0
+        left: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Основной блок с media изменениями после 836px
 
@@ -293,30 +344,12 @@ a
         &-block
             height: 95px
     .about
-        &-none
-            display: none
+        @include span(12)
+        img
+            @include span(12)
         &-desc
             @include span(12)
             position: inherit
-
-
-
-footer
-    @include span(12 nest)
-    background-color: black
-    color: white
-.footer-info
-    @include span(12 nest)
-    ul
-        text-align: center
-        padding: 0
-        list-style: none
-        @include span(4 nest)
-        li
-
-
-
-
 
 
 
