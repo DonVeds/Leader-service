@@ -1,13 +1,24 @@
 @import "vars"
 @import "susy"
 
+//При разработке использовался sass v3.10.10 и susy v2
+
 body
     margin: 0
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
 
-
 a
     color: #000
+
+hr
+    border: none
+    height: 2px
+    background-color: $detail
+    color: $detail
+
+img
+    pointer-events: none
+
 
 
 .header //меню с гамбургером
@@ -203,10 +214,13 @@ a
     @include span(12)
     &-left
         @include span(4)
+        .services-block:nth-child(3) > p
+            margin-bottom: 0
         img
             @include span(4)
         p
             @include span(8)
+            margin-top: 0
     &-mid
         @include span(4)
     &-right
@@ -215,12 +229,16 @@ a
             @include span(4)
         p
             @include span(8)
+            margin-top: 0
     &-block
         @include span(12)
         margin-bottom: 10px
     p
         font-weight: 600
         text-align: center
+    b
+        color: $detail
+
 
 //Заголовки
 
@@ -232,31 +250,71 @@ a
     text-align: center
     margin: 3% 0
 
+.hl
+    background-color: $accent
+    color: white
+    display: inline
+    padding: 0 4px
+
 //О нас
 
 .about
     @include span(10 nest)
     margin: 0 10%
-    img
-        @include span(6)
+    &> img
+        @include span(6 nest)
     .headliner
         margin:
             top: 0
     &-desc
-        @include span(6)
-        background-color: white
+        margin-top: 7%
+        text-align: center
+        @include span(6 nest)
+    &-gallery
+        @include span(12 nest)
+        &-desc
+            @include span(6 nest)
+            padding-top: 5%
+            text-align: center
+            p
+                margin-bottom: 0
+        &-img
+            @include span(6 nest)
+            img
+                width: 100%
+
+@media (min-width: 836px)
+    .about
+        &-gallery-desc
+            margin-top: 10%
+
+@media (max-width: 415px)
+    .about
+        &-gallery-desc
+            padding-top: 2%
+            p
+                margin: 0
+
+@media (max-width: 321px)
+    .about
+        &-gallery-desc
+            font-size: 13px
 
 .sign-author
-    @include span(6)
+    @include span(9 nest)
+    font-weight: 600
 
 .sign
-    @include span(6)
-    width: 50px
-    height: 40px
+    @include span(3 nest)
+    height: 53px
 
 
-
-
+.guaranty
+    @include span(12 nest)
+    text-align: center
+    background-color: $accent
+    color: white
+    margin-top: 20px
 
 
 
@@ -270,15 +328,17 @@ a
 
 footer
     font-size: 9px
-    @include span(12)
+    @include span(12 nest)
     background-color: black
     color: white
-    width: 100%
-    margin: 50px 0 0 0
+    margin-top: 50px
     a
         color: white
+    &> hr
+        background-color: white
+        color: white
 .footer-info
-    @include span(12)
+    @include span(12 nest)
     ul
         text-align: center
         padding: 0
@@ -309,6 +369,10 @@ hr
 
 //Основной блок с media изменениями после 836px
 
+@media (min-width: 836px)
+    .main
+        font-size: 20px
+
 @media (max-width: 836px)
     .diagnostic-m
         margin-top: 40%
@@ -332,25 +396,49 @@ hr
         .diagnostic-m
             margin-top: 40%
     .plate-board
+        bottom: 30px
         margin: 0
     .services
         &-left
             @include span(5)
+            p
+                margin-top: 0
         &-mid
             @include span(2)
+            width:
             visibility: hidden
         &-right
             @include span(5)
+            p
+                margin-top: 0
         &-block
             height: 95px
     .about
         @include span(12)
-        img
+        &> img
             @include span(12)
         &-desc
             @include span(12)
             position: inherit
 
+@media (max-width: 376px)
+    .plate
+        font-size: 14px
+
+
+//Для iphone 5
+@media (max-width: 321px)
+    .header
+        .logo
+            margin: 10px 0
+    .about
+        &-gallery-desc
+            font-size: 13px
+    .plate
+        font-size: 12px
+    .about
+        &-gallery-desc
+            font-size: 13px
 
 
 
