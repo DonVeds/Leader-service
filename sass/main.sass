@@ -7,6 +7,9 @@ body
     margin: 0
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
 
+b
+    color: $detail
+
 a
     color: #000
 
@@ -153,7 +156,7 @@ img
     display: none
 
 
-@media (min-width: 977px)
+@media (min-width: 1161px)
     .none
         display: block
 
@@ -308,6 +311,13 @@ img
     @include span(3 nest)
     height: 53px
 
+.price
+    @include span(12 nest)
+
+th, td
+    padding: 12px 15px
+    text-align: left
+    border-bottom: 1px solid #E1E1E1
 
 .guaranty
     @include span(12 nest)
@@ -322,16 +332,11 @@ img
 
 
 
-
-
-
-
 footer
     font-size: 9px
     @include span(12 nest)
     background-color: black
     color: white
-    margin-top: 50px
     a
         color: white
     &> hr
@@ -371,7 +376,7 @@ hr
 
 @media (min-width: 836px)
     .main
-        font-size: 20px
+        font-size: 19px
 
 @media (max-width: 836px)
     .diagnostic-m
@@ -420,12 +425,15 @@ hr
         &-desc
             @include span(12)
             position: inherit
+    .price
+        td,th
+            padding:
+                left: 1px
+                right: 1px
 
 @media (max-width: 376px)
     .plate
         font-size: 14px
-
-
 //Для iphone 5
 @media (max-width: 321px)
     .header
@@ -439,6 +447,9 @@ hr
     .about
         &-gallery-desc
             font-size: 13px
+    .price
+        table
+            font-size: 12px
 
 
 
