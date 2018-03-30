@@ -1,0 +1,455 @@
+extends _layout
+
+block header
+  header.header
+    a.logo(href='/') ЛИДЕР-СЕРВИС
+    input#menu-btn.menu-btn(type='checkbox')
+    label.menu-icon(for='menu-btn')
+      span.navicon
+    ul.menu
+      li
+        a(href='#services') Чем мы занимаемся
+      li
+        a(href='#about') Почему мы лучшие
+      li
+        a(href='#price') Наши цены
+      li
+        a(href='#contact') Контакты 
+
+block content
+  .main
+    img.main_photo(src='img/main.png', alt='ЛИДЕР СРЕДИ СЕРВИСОВ')
+    .plate-board.vcard
+      .plate
+        .plate_dec
+          i.fa.fa-clock-o.fa-2x
+        i.fa.fa-clock-o.fa-5x.bg-fa
+        .desc
+          p.workhours Понедельник-пятница
+          p.workhours 9:00 - 18:00
+            br
+            | В субботу до 14:00
+      .plate
+        .plate_dec
+          i.fa.fa-phone.fa-2x
+        i.fa.fa-phone.fa-5x.bg-fa
+        .desc
+          p Есть вопросы? Звони!
+          p
+            a.tel(href='tel:+73462783660') +7(3462)78-36-60
+            br
+      .plate
+        .plate_dec
+          i.fa.fa-map-marker.fa-2x
+        i.fa.fa-map-marker.fa-5x.bg-fa
+        .desc
+          p Нужен ремонт? Адрес:
+          p
+            a.locality(href='https://www.google.ru/maps/place/%D0%9B%D0%B8%D0%B4%D0%B5%D1%80-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81/@61.2786204,73.4191133,17.25z/data=!4m8!1m2!2m1!1z0LvQuNC00LXRgCDRgdC10YDQstC40YE!3m4!1s0x4373970e9eba02e9:0xcea0fafafac120d8!8m2!3d61.278974!4d73.419296') г. Сургут, ул. Индустриальная, д38
+          p.none .
+      .sale
+        h3
+        p
+          b.underline
+      #services.services
+        p.headliner Чем мы занимаемся
+        .services-left
+          .services-block
+            img(src='img/icons/004-diagnostic.svg', alt='диагностика')
+            p
+              b Диагностика 
+              | дизельной техники
+          .services-block
+            img(src='img/icons/006-piston.svg', alt='двигатель')
+            p
+              b Ремонт 
+              | дизелых двигателей
+          .services-block
+            img(src='img/icons/002-speed.svg', alt='выездной ремонт')
+            p 
+              | Выездной 
+              b ремонт
+        .services-mid
+          img.diagnostic-m(src='img/icons/003-mechanic.svg', alt='diagnostic')
+        .services-right
+          .services-block
+            p
+              b Ремонт 
+              | форсунок common rail
+            img(src='img/icons/003-ignition.svg', alt='форсунка')
+          .services-block
+            p
+              b Ремонт 
+              | насосов common rail
+            img(src='img/icons/005-reparation.svg', alt='насос')
+          .services-block
+            p
+              b Промывка 
+              | топливных систем
+            img(src='img/icons/001-oil.svg', alt='топливная система')
+        hr
+    #about.about
+      p.headliner &Pcy;&ocy;&chcy;&iecy;&mcy;&ucy; &mcy;&ycy; &lcy;&ucy;&chcy;&shcy;&icy;&iecy;?
+      img(src='img/boss.jpg', alt='начальник')
+      .about-desc
+        h4.hl &CHcy;&tcy;&ocy; &dcy;&acy;&iecy;&tcy; &ncy;&acy;&mcy; &ocy;&pcy;&ycy;&tcy;?
+        p
+          b 2008
+          b &scy;&acy;&mcy;&ycy;&iecy; &lcy;&ucy;&chcy;&shcy;&icy;&iecy; &ucy;&scy;&lcy;&ocy;&vcy;&icy;&yacy;
+          b &kcy;&acy;&chcy;&iecy;&scy;&tcy;&vcy;&acy;
+        p.sign-author &Acy;&ncy;&ucy;&fcy;&rcy;&icy;&iecy;&vcy; &Vcy;&icy;&tcy;&acy;&lcy;&icy;&jcy; &Pcy;&acy;&vcy;&lcy;&ocy;&vcy;&icy;&chcy;
+        img.sign(src='img/sign.png', alt='')
+      hr
+      .about-gallery
+        .about-gallery-desc
+          h4.hl &Pcy;&ocy;&chcy;&iecy;&mcy;&ucy; &ncy;&acy;&shcy;&acy; &dcy;&icy;&acy;&gcy;&ncy;&ocy;&scy;&tcy;&icy;&kcy;&acy; &scy;&acy;&mcy;&acy;&yacy; &tcy;&ocy;&chcy;&ncy;&acy;&yacy;?
+          p
+            b &scy;&acy;&mcy;&ocy;&iecy; &tcy;&ocy;&chcy;&ncy;&ocy;&iecy; &ocy;&bcy;&ocy;&rcy;&ucy;&dcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy;
+        .about-gallery-img
+          img(src='img/diagnostic.jpg', alt='диагностика')
+        .about-gallery-img
+          img(src='img/bus.jpg', alt='')
+        .about-gallery-desc
+          h4.hl &Pcy;&ocy;&chcy;&iecy;&mcy;&ucy; &mcy;&ycy; &lcy;&icy;&dcy;&iecy;&rcy;&ycy; &vcy;&ocy; &vcy;&scy;&iecy;&khcy; &ncy;&acy;&pcy;&rcy;&acy;&vcy;&lcy;&iecy;&ncy;&icy;&yacy;&khcy;?
+          p
+            b &lcy;&ucy;&chcy;&shcy;&icy;&iecy; &scy;&pcy;&iecy;&tscy;&icy;&acy;&lcy;&icy;&scy;&tcy;&ycy;
+            b &vcy;&scy;&iecy;&khcy; &ucy;&rcy;&ocy;&vcy;&ncy;&iecy;&jcy; &scy;&lcy;&ocy;&zhcy;&ncy;&ocy;&scy;&tcy;&icy;
+        hr
+        .about-gallery-desc
+          h4.hl &Pcy;&ocy;&chcy;&iecy;&mcy;&ucy; &ucy; &ncy;&acy;&scy; &scy;&acy;&mcy;&ycy;&jcy; &kcy;&acy;&chcy;&iecy;&scy;&tcy;&vcy;&iecy;&ncy;&ncy;&ycy;&jcy; &rcy;&iecy;&mcy;&ocy;&ncy;&tcy;?
+          p
+            b &pcy;&rcy;&ocy;&vcy;&iecy;&rcy;&iecy;&ncy;&ncy;&ycy;&jcy; &vcy;&rcy;&iecy;&mcy;&iecy;&ncy;&iecy;&mcy;
+        .about-gallery-img
+          img(src='img/stand.jpg', alt='')
+        .about-gallery-img
+          img(src='img/manager.jpg', alt='')
+        .about-gallery-desc
+          h4.hl &Pcy;&ocy;&chcy;&iecy;&mcy;&ucy; &mcy;&ycy; &scy;&acy;&mcy;&ycy;&iecy; &bcy;&lcy;&icy;&zcy;&kcy;&icy;&iecy; &kcy; &pcy;&ocy;&tcy;&rcy;&iecy;&bcy;&icy;&tcy;&iecy;&lcy;&yucy;?
+          p
+            b &scy;&kcy;&icy;&dcy;&ocy;&kcy;
+            b &Ncy;&Dcy;&Scy;
+        hr
+      #price.price
+        p.headliner &Ncy;&acy;&shcy;&icy; &tscy;&iecy;&ncy;&ycy;
+        h2.hl &Rcy;&acy;&scy;&tscy;&iecy;&ncy;&kcy;&acy; &dcy;&lcy;&yacy; &lcy;&iecy;&gcy;&kcy;&ocy;&vcy;&ycy;&khcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&iecy;&jcy;
+        table
+          thead
+            tr
+              th &Ncy;&acy;&icy;&mcy;&iecy;&ncy;&ocy;&vcy;&acy;&ncy;&icy;&iecy; &ucy;&scy;&lcy;&ucy;&gcy;&icy;
+              th &Pcy;&ocy;&yacy;&scy;&ncy;&iecy;&ncy;&icy;&iecy; &kcy; &ucy;&scy;&lcy;&ucy;&gcy;&iecy;
+              th &Scy;&tcy;&ocy;&icy;&mcy;&ocy;&scy;&tcy;&softcy; &bcy;&iecy;&zcy; &Ncy;&Dcy;&Scy;
+          tbody
+            tr
+              td(rowspan='2')
+                p &Dcy;&icy;&acy;&gcy;&ncy;&ocy;&scy;&tcy;&icy;&kcy;&acy;
+              td
+                p &Kcy;&ocy;&mcy;&pcy;&softcy;&yucy;&tcy;&iecy;&rcy;&ncy;&acy;&yacy; + &tcy;&iecy;&scy;&tcy; &fcy;&ocy;&rcy;&scy;&ucy;&ncy;&ocy;&kcy;
+              td
+                p 2 500+500
+            tr
+              td
+                p &Scy; &vcy;&ycy;&iecy;&zcy;&dcy;&ocy;&mcy; &pcy;&ocy; &gcy;&ocy;&rcy;&ocy;&dcy;&ucy;
+                p &Scy;&vcy;&ycy;&shcy;&iecy; 25 &kcy;&mcy;
+              td
+                p +500&rcy;
+                p +20&rcy;/&kcy;&mcy;
+            tr
+              td(rowspan='2')
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &fcy;&ocy;&rcy;&scy;&ucy;&ncy;&ocy;&kcy; (1 &shcy;&tcy;.)
+              td  
+              td
+                p 1 000
+            tr
+              td
+                p &Scy;&ocy; &scy;&ncy;&yacy;&tcy;&icy;&iecy;&mcy; &kcy;&lcy;&acy;&pcy;&acy;&ncy;&ncy;&ocy;&jcy; &kcy;&rcy;&ycy;&shcy;&kcy;&icy;
+              td
+                p 1 500
+            tr
+              td
+                p &Scy;&lcy;&ocy;&zhcy;&ncy;&ycy;&jcy; &scy;&hardcy;&iecy;&mcy; &fcy;&ocy;&rcy;&scy;&ucy;&ncy;&kcy;&icy;
+              td
+                p &Fcy;&ocy;&rcy;&scy;&ucy;&ncy;&kcy;&acy; &lcy;&ocy;&pcy;&ncy;&ucy;&lcy;&acy; &pcy;&rcy;&icy; &scy;&ncy;&yacy;&tcy;&icy;&icy; (&scy;&ocy;&gcy;&lcy;&acy;&scy;&ocy;&vcy;&acy;&ncy;&ocy; &scy; &kcy;&lcy;&icy;&iecy;&ncy;&tcy;&ocy;&mcy;)
+              td
+                p 4 000
+            tr
+              td(rowspan='2')
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &rcy;&acy;&mcy;&pcy;&ycy;
+              td
+                p Ssang Yong
+              td
+                p 1 500
+            tr
+              td
+                p Starex, Sorento, L-200, Mercedes, Nissan
+              td
+                p 2 500
+            tr
+              td(rowspan='2')
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &Tcy;&Ncy;&Vcy;&Dcy;
+              td
+                p L-200, Sorento, Starex, Nissan &icy; &dcy;&rcy;.
+              td
+                p 12 000
+            tr
+              td
+                p Sportage, Santa Fe
+              td
+                p &ocy;&tcy; 3 000
+            tr
+              td(rowspan='2')
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy;/&pcy;&rcy;&ocy;&mcy;&ycy;&vcy;&kcy;&acy; &tcy;&ocy;&pcy;&lcy;&icy;&vcy;&ncy;&ocy;&gcy;&ocy; &bcy;&acy;&kcy;&acy;
+              td  
+              td
+                p 4 000
+            tr
+              td
+                p Santa Fe, 4 WD
+              td
+                p 4 500
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &Gcy;&Bcy;&TScy;
+              td  
+              td
+                p 10 000
+            tr
+              td
+                p &Zcy;&acy;&mcy;&iecy;&ncy;&acy; &rcy;&iecy;&mcy;&ncy;&iecy;&jcy; &Gcy;&Rcy;&Mcy; (&tscy;&iecy;&pcy;&iecy;&jcy;)
+              td  
+              td
+                p &ocy;&tcy; 6000
+            tr
+              td
+                p &Zcy;&acy;&mcy;&iecy;&ncy;&acy; &scy;&vcy;&iecy;&chcy;&iecy;&jcy; &ncy;&acy;&kcy;&acy;&lcy;&icy;&vcy;&acy;&ncy;&icy;&yacy;
+              td  
+              td
+                p 500 &zcy;&acy; 1 &shcy;&tcy;.
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &pcy;&ocy;&dcy;&dcy;&ocy;&ncy;&acy;
+              td  
+              td
+                p 4 000
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &Dcy;&Vcy;&Scy;
+              td  
+              td
+                p 10 000
+            tr
+              td
+                p &Zcy;&acy;&mcy;&iecy;&ncy;&acy; &pcy;&ocy;&rcy;&shcy;&ncy;&iecy;&vcy;&ycy;&khcy; &kcy;&ocy;&lcy;&iecy;&tscy;, &vcy;&kcy;&lcy;&acy;&dcy;&ycy;&shcy;&iecy;&jcy;, &pcy;&ocy;&rcy;&shcy;&ncy;&iecy;&jcy;
+              td  
+              td
+                p 2 000 &zcy;&acy; 1 &shcy;&tcy;.
+            tr
+              td
+                p &Pcy;&rcy;&ocy;&mcy;&ycy;&vcy;&kcy;&acy; &rcy;&acy;&mcy;&pcy;&ycy;
+              td  
+              td
+                p 2000
+            tr
+              td
+                p &Rcy;&iecy;&mcy;&ocy;&ncy;&tcy; &Tcy;&Ncy;&Vcy;&Dcy; &bcy;&iecy;&zcy; &zcy;&acy;&pcy;&chcy;&acy;&scy;&tcy;&iecy;&jcy;
+              td  
+              td
+                p 10 000
+            tr
+              td(rowspan='2')
+                p &Rcy;&iecy;&mcy;&ocy;&ncy;&tcy; &fcy;&ocy;&rcy;&scy;&ucy;&ncy;&ocy;&kcy; (1&shcy;&tcy;.) &bcy;&iecy;&zcy; &ucy;&chcy;&iecy;&tcy;&acy; &zcy;&acy;&pcy;&acy;&scy;&ncy;&ycy;&khcy; &chcy;&acy;&scy;&tcy;&iecy;&jcy;
+              td
+                p Common Rail
+              td
+                p 4 000-6000
+            tr
+              td
+                p &IEcy;&vcy;&rcy;&ocy; 5
+              td
+                p 5 000
+            tr
+              td
+                p &Pcy;&rcy;&ocy;&vcy;&iecy;&rcy;&kcy;&acy; &fcy;&ocy;&rcy;&scy;&ucy;&ncy;&kcy;&icy; Common Rail &ncy;&acy; &scy;&tcy;&iecy;&ncy;&dcy;&iecy; (1&shcy;&tcy;.)
+              td  
+              td
+                p 500
+            tr
+              td
+                p &Zcy;&acy;&mcy;&iecy;&ncy;&acy; &tcy;&ocy;&pcy;&lcy;&icy;&vcy;&ncy;&ocy;&gcy;&ocy; &fcy;&icy;&lcy;&softcy;&tcy;&rcy;&acy; (1&shcy;&tcy;.)
+              td  
+              td
+                p 500
+            tr
+              td
+                p &Zcy;&acy;&mcy;&iecy;&ncy;&acy; &mcy;&acy;&scy;&lcy;&acy; &icy; &fcy;&icy;&lcy;&softcy;&tcy;&rcy;&acy;
+              td  
+              td
+                p 1 000
+            tr
+              td
+                p &Zcy;&acy;&mcy;&iecy;&rcy; &kcy;&ocy;&mcy;&pcy;&rcy;&iecy;&scy;&icy;&icy;
+              td
+                p &Pcy;&rcy;&icy; &scy;&ncy;&yacy;&tcy;&ycy;&khcy; &fcy;&ocy;&rcy;&scy;&ucy;&ncy;&kcy;&acy;&khcy;
+              td
+                p 250 &zcy;&acy; 1 &shcy;&tcy;.
+            tr
+              td(rowspan='2')
+                p &Rcy;&iecy;&mcy;&ocy;&ncy;&tcy; &Dcy;&Vcy;&Scy;
+              td
+                p &Ncy;&acy; &scy;&ncy;&yacy;&tcy;&ocy;&mcy; &Dcy;&Vcy;&Scy;
+              td
+                p 50 000
+            tr
+              td
+                p &Scy;&ocy; &scy;&ncy;&yacy;&tcy;&icy;&iecy;&mcy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&ocy;&jcy; &Dcy;&Vcy;&Scy;
+              td
+                p 60 000
+        p
+          br
+          br
+          b &Scy; &Ncy;&Dcy;&Scy;+18%
+        h2.hl &Rcy;&acy;&scy;&tscy;&iecy;&ncy;&kcy;&acy; &dcy;&lcy;&yacy; &gcy;&rcy;&ucy;&zcy;&ocy;&vcy;&ycy;&khcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&iecy;&jcy;
+        table
+          thead
+            tr
+              th &Ncy;&acy;&icy;&mcy;&iecy;&ncy;&ocy;&vcy;&acy;&ncy;&icy;&iecy; &ucy;&scy;&lcy;&ucy;&gcy;&icy;
+              th &Pcy;&ocy;&yacy;&scy;&ncy;&iecy;&ncy;&icy;&iecy; &kcy; &ucy;&scy;&lcy;&ucy;&gcy;&iecy;
+              th &Scy;&tcy;&ocy;&icy;&mcy;&ocy;&scy;&tcy;&softcy; &bcy;&iecy;&zcy; &Ncy;&Dcy;&Scy;
+          tbody
+            tr
+              td(rowspan='2')
+                p &Dcy;&icy;&acy;&gcy;&ncy;&ocy;&scy;&tcy;&icy;&kcy;&acy;
+              td  
+              td
+                p 3 500
+            tr
+              td
+                p &Scy; &vcy;&ycy;&iecy;&zcy;&dcy;&ocy;&mcy; &pcy;&ocy; &gcy;&ocy;&rcy;&ocy;&dcy;&ucy;
+                p &Scy;&vcy;&ycy;&shcy;&iecy; 25 &kcy;&mcy;
+              td
+                p +500&rcy;
+                p +20&rcy;/&kcy;&mcy;
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &fcy;&ocy;&rcy;&scy;&ucy;&ncy;&ocy;&kcy; (1 &shcy;&tcy;.)
+              td  
+              td
+                p 1 000-1 500
+            tr
+              td
+                p &Rcy;&iecy;&mcy;&ocy;&ncy;&tcy; &fcy;&ocy;&rcy;&scy;&ucy;&ncy;&ocy;&kcy; &bcy;&iecy;&zcy; &ucy;&chcy;&iecy;&tcy;&acy; &zcy;&acy;&pcy;&chcy;&acy;&scy;&tcy;&iecy;&jcy;
+              td  
+              td
+                p 5 000
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &rcy;&acy;&mcy;&pcy;&ycy;
+              td  
+              td
+                p 3 000
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &Tcy;&Ncy;&Vcy;&Dcy; + &rcy;&iecy;&mcy;&ocy;&ncy;&tcy;
+              td  
+              td
+                p 15 000 + 10 000
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &kcy;&ocy;&lcy;&lcy;&iecy;&kcy;&tcy;&ocy;&rcy;&acy;
+              td  
+              td(width='151')
+                p 5 000
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &Gcy;&Bcy;&TScy; (4 &tscy;&icy;&lcy;&icy;&ncy;&dcy;&rcy;&acy; -6 &tscy;&icy;&lcy;&icy;&ncy;&dcy;&rcy;&ocy;&vcy;)
+              td  
+              td
+                p 12 000-20000
+            tr
+              td
+                p &Zcy;&acy;&mcy;&iecy;&ncy;&acy; &pcy;&ocy;&rcy;&shcy;&ncy;&iecy;&jcy; (1 &shcy;&tcy;.)
+              td &Pcy;&rcy;&icy; &scy;&ncy;&yacy;&tcy;&ocy;&jcy; &Gcy;.&Bcy;.&TScy; &icy; &pcy;&ocy;&dcy;&dcy;&ocy;&ncy;&iecy; &Dcy;&Vcy;&Scy;
+              td
+                p 3 000
+            tr
+              td
+                p &Zcy;&acy;&mcy;&iecy;&ncy;&acy; &vcy;&kcy;&lcy;&acy;&dcy;&ycy;&shcy;&iecy;&jcy; (4 &tscy;&icy;&lcy;&icy;&ncy;&dcy;&rcy;&acy; -6 &tscy;&icy;&lcy;&icy;&ncy;&dcy;&rcy;&ocy;&vcy;)
+              td  
+              td
+                p 10 000-15000
+            tr
+              td
+                p &Zcy;&acy;&mcy;&iecy;&ncy;&acy; &gcy;&icy;&lcy;&softcy;&zcy; (1&shcy;&tcy;)
+              td &Pcy;&rcy;&icy; &scy;&ncy;&yacy;&tcy;&ocy;&jcy; &Gcy;.&Bcy;.&TScy; &icy; &pcy;&ocy;&dcy;&dcy;&ocy;&ncy;&iecy; &Dcy;&Vcy;&Scy;
+              td
+                p 2 000
+            tr
+              td
+                p &Zcy;&acy;&mcy;&iecy;&ncy;&acy; &tcy;&ocy;&pcy;&lcy;&icy;&vcy;&ncy;&ycy;&khcy; &fcy;&icy;&lcy;&softcy;&tcy;&rcy;&ocy;&vcy; (1 &shcy;&tcy;.)
+              td  
+              td
+                p 500
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &Dcy;&Vcy;&Scy;
+              td  
+              td
+                p 20 000
+            tr
+              td
+                p &Rcy;&iecy;&gcy;&ucy;&lcy;&icy;&rcy;&ocy;&vcy;&kcy;&acy; &kcy;&lcy;&acy;&pcy;&acy;&ncy;&ocy;&vcy;
+              td  
+              td
+                p 6 000
+            tr
+              td
+                p &Pcy;&rcy;&ocy;&mcy;&ycy;&vcy;&kcy;&acy; &tcy;&ocy;&pcy;&lcy;&icy;&vcy;&ncy;&ocy;&gcy;&ocy; &bcy;&acy;&kcy;&acy;
+              td  
+              td
+                p 5 000
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &pcy;&ocy;&dcy;&dcy;&ocy;&ncy;&acy; (4 -6)
+              td  
+              td
+                p 5 000-7 000
+            tr
+              td
+                p &Scy;&ncy;&yacy;&tcy;&icy;&iecy;/&ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&acy; &ocy;&dcy;&ncy;&ocy;&jcy; &gcy;&ocy;&lcy;&ocy;&vcy;&kcy;&icy; &Gcy;&Bcy;&TScy; (&rcy;&acy;&zcy;&dcy;&iecy;&lcy;&softcy;&ncy;&ycy;&iecy; &gcy;&ocy;&lcy;&ocy;&vcy;&kcy;&icy;)
+              td  
+              td
+                p 3 500
+            tr
+              td(rowspan='2')
+                p &Rcy;&iecy;&mcy;&ocy;&ncy;&tcy; &Dcy;&Vcy;&Scy;
+              td
+                p &Ncy;&acy; &scy;&ncy;&yacy;&tcy;&ocy;&mcy; &Dcy;&Vcy;&Scy;
+              td
+                p 70 000
+            tr
+              td
+                p &Scy;&ocy; &scy;&ncy;&yacy;&tcy;&icy;&iecy;&mcy;/ &ucy;&scy;&tcy;&acy;&ncy;&ocy;&vcy;&kcy;&ocy;&jcy; &Dcy;&Vcy;&Scy;
+              td
+                p 90 000
+        p
+          br
+          br
+          b &Scy; &Ncy;&Dcy;&Scy;+18%
+    .guaranty
+      h3 &Mcy;&Ycy; &Dcy;&Acy;&IEcy;&Mcy; 100% &Gcy;&Acy;&Rcy;&Acy;&Ncy;&Tcy;&Icy;&Icy; &Ncy;&Acy; 10.000 &Kcy;&Mcy; &Pcy;&Rcy;&Ocy;&Bcy;&IEcy;&Gcy;&Acy; &Icy;&Lcy;&Icy; 3 &Mcy;&IEcy;&Scy;&YAcy;&TScy;&Acy; &Ecy;&Kcy;&Scy;&Pcy;&Lcy;&Ucy;&Acy;&Tcy;&Acy;&TScy;&Icy;&Icy; 
+    #contact.contact
+      p.headliner &Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;
+      .contact_desc
+        p &Vcy;&ycy; &vcy;&scy;&iecy;&gcy;&dcy;&acy; &mcy;&ocy;&zhcy;&iecy;&tcy;&iecy; &scy;&vcy;&yacy;&zcy;&acy;&tcy;&softcy;&scy;&yacy; &scy; &ncy;&acy;&mcy;&icy; &ocy;&dcy;&ncy;&icy;&mcy; &icy;&zcy; &ucy;&dcy;&ocy;&bcy;&ncy;&ycy;&khcy; &dcy;&lcy;&yacy; &vcy;&acy;&scy; &scy;&pcy;&ocy;&scy;&ocy;&bcy;&ocy;&vcy;:
+        p.contact_phone
+          i.fa.fa-phone.fa-2x
+          a(href='tel:+73462783660')  +7(3462)78-36-60
+        .socials
+          a(href='viber://chat?number=73462783660')
+            img(src='img/icons/003-viber.svg', alt='viber')
+          a(href='https://api.whatsapp.com/send?phone=73462783660')
+            img(src='img/icons/004-whatsapp.svg', alt='whatsapp')
+          a(href='tg://resolve?domain=Donveds')
+            img(src='img/icons/002-telegram.svg', alt='telegtram')
+        p.contact_email
+          i.fa.fa-envelope.fa-2x
+    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10845.672076641744!2d73.4195651!3d61.2794094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcea0fafafac120d8!2z0JvQuNC00LXRgC3RgdC10YDQstC40YE!5e0!3m2!1sru!2sru!4v1502970248761')

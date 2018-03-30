@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const config = require('../config');
 
-mongoose.Promise = global.Promise;
+mongoose.Promise = Promise;
 
 mongoose.set('debug', true);
 
