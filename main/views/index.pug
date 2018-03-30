@@ -2,7 +2,7 @@ extends _layout
 
 block header
   header.header
-    a.logo(href='/') ЛИДЕР-СЕРВИС
+    a.logo(href='/')= content.name.toUpperCase()
     input#menu-btn.menu-btn(type='checkbox')
     label.menu-icon(for='menu-btn')
       span.navicon
@@ -36,7 +36,7 @@ block content
         .desc
           p Есть вопросы? Звони!
           p
-            a.tel(href='tel:+73462783660') +7(3462)78-36-60
+            a.tel(href=`tel:${content.phone}`)= content.phone
             br
       .plate
         .plate_dec
@@ -45,10 +45,11 @@ block content
         .desc
           p Нужен ремонт? Адрес:
           p
-            a.locality(href='https://www.google.ru/maps/place/%D0%9B%D0%B8%D0%B4%D0%B5%D1%80-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81/@61.2786204,73.4191133,17.25z/data=!4m8!1m2!2m1!1z0LvQuNC00LXRgCDRgdC10YDQstC40YE!3m4!1s0x4373970e9eba02e9:0xcea0fafafac120d8!8m2!3d61.278974!4d73.419296') г. Сургут, ул. Индустриальная, д38
+            a.locality(href=content.googlemaps)= content.adress
           p.none .
-      .sale
-        h3
+      if content.sale
+        .sale
+          h3 Акция
         p
           b.underline
       #services.services
@@ -89,45 +90,36 @@ block content
             img(src='img/icons/001-oil.svg', alt='топливная система')
         hr
     #about.about
-      p.headliner &Pcy;&ocy;&chcy;&iecy;&mcy;&ucy; &mcy;&ycy; &lcy;&ucy;&chcy;&shcy;&icy;&iecy;?
+      p.headliner Почему мы лучшие?
       img(src='img/boss.jpg', alt='начальник')
       .about-desc
-        h4.hl &CHcy;&tcy;&ocy; &dcy;&acy;&iecy;&tcy; &ncy;&acy;&mcy; &ocy;&pcy;&ycy;&tcy;?
-        p
-          b 2008
-          b &scy;&acy;&mcy;&ycy;&iecy; &lcy;&ucy;&chcy;&shcy;&icy;&iecy; &ucy;&scy;&lcy;&ocy;&vcy;&icy;&yacy;
-          b &kcy;&acy;&chcy;&iecy;&scy;&tcy;&vcy;&acy;
-        p.sign-author &Acy;&ncy;&ucy;&fcy;&rcy;&icy;&iecy;&vcy; &Vcy;&icy;&tcy;&acy;&lcy;&icy;&jcy; &Pcy;&acy;&vcy;&lcy;&ocy;&vcy;&icy;&chcy;
+        h4.hl Что дает нам опыт?
+        p= content.ourExp
+        p.sign-author Ануфриев Виталий Павлович
         img.sign(src='img/sign.png', alt='')
       hr
       .about-gallery
         .about-gallery-desc
-          h4.hl &Pcy;&ocy;&chcy;&iecy;&mcy;&ucy; &ncy;&acy;&shcy;&acy; &dcy;&icy;&acy;&gcy;&ncy;&ocy;&scy;&tcy;&icy;&kcy;&acy; &scy;&acy;&mcy;&acy;&yacy; &tcy;&ocy;&chcy;&ncy;&acy;&yacy;?
-          p
-            b &scy;&acy;&mcy;&ocy;&iecy; &tcy;&ocy;&chcy;&ncy;&ocy;&iecy; &ocy;&bcy;&ocy;&rcy;&ucy;&dcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy;
+          h4.hl Почему наша диагностика самая точная?
+          p= content.ourDiagnostic
         .about-gallery-img
           img(src='img/diagnostic.jpg', alt='диагностика')
         .about-gallery-img
           img(src='img/bus.jpg', alt='')
         .about-gallery-desc
-          h4.hl &Pcy;&ocy;&chcy;&iecy;&mcy;&ucy; &mcy;&ycy; &lcy;&icy;&dcy;&iecy;&rcy;&ycy; &vcy;&ocy; &vcy;&scy;&iecy;&khcy; &ncy;&acy;&pcy;&rcy;&acy;&vcy;&lcy;&iecy;&ncy;&icy;&yacy;&khcy;?
-          p
-            b &lcy;&ucy;&chcy;&shcy;&icy;&iecy; &scy;&pcy;&iecy;&tscy;&icy;&acy;&lcy;&icy;&scy;&tcy;&ycy;
-            b &vcy;&scy;&iecy;&khcy; &ucy;&rcy;&ocy;&vcy;&ncy;&iecy;&jcy; &scy;&lcy;&ocy;&zhcy;&ncy;&ocy;&scy;&tcy;&icy;
+          h4.hl Почему мы лидеры во всех направлениях?
+          p= content.ourLeadership
         hr
         .about-gallery-desc
-          h4.hl &Pcy;&ocy;&chcy;&iecy;&mcy;&ucy; &ucy; &ncy;&acy;&scy; &scy;&acy;&mcy;&ycy;&jcy; &kcy;&acy;&chcy;&iecy;&scy;&tcy;&vcy;&iecy;&ncy;&ncy;&ycy;&jcy; &rcy;&iecy;&mcy;&ocy;&ncy;&tcy;?
-          p
-            b &pcy;&rcy;&ocy;&vcy;&iecy;&rcy;&iecy;&ncy;&ncy;&ycy;&jcy; &vcy;&rcy;&iecy;&mcy;&iecy;&ncy;&iecy;&mcy;
+          h4.hl Почему у нас самый качественный ремонт?
+          p= content.ourQuallity
         .about-gallery-img
           img(src='img/stand.jpg', alt='')
         .about-gallery-img
           img(src='img/manager.jpg', alt='')
         .about-gallery-desc
-          h4.hl &Pcy;&ocy;&chcy;&iecy;&mcy;&ucy; &mcy;&ycy; &scy;&acy;&mcy;&ycy;&iecy; &bcy;&lcy;&icy;&zcy;&kcy;&icy;&iecy; &kcy; &pcy;&ocy;&tcy;&rcy;&iecy;&bcy;&icy;&tcy;&iecy;&lcy;&yucy;?
-          p
-            b &scy;&kcy;&icy;&dcy;&ocy;&kcy;
-            b &Ncy;&Dcy;&Scy;
+          h4.hl Почему мы самые близкие к потребителю?
+          p= content.ourManagment
         hr
       #price.price
         p.headliner &Ncy;&acy;&shcy;&icy; &tscy;&iecy;&ncy;&ycy;
