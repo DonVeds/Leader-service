@@ -184,9 +184,8 @@ img {
     }
 }
 
-.sale{
-    /* background: linear-gradient(to right, #c20000, #f83600); */
-    background-color: white;
+.sale {
+    background: linear-gradient(to right, #c20000, #f83600);
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -664,4 +663,3 @@ hr {
         font-size: 12px;
     }
 }
-
