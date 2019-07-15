@@ -184,9 +184,8 @@ img {
     }
 }
 
-.sale{
-    /* background: linear-gradient(to right, #c20000, #f83600); */
-    background-color: white;
+.sale {
+    background: linear-gradient(to right, #c20000, #f83600);
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -194,9 +193,9 @@ img {
 }
 
 .sale h3{
-    margin-top: -0.625em;
     text-shadow: black 0 0 5px;
     padding: 0 5% 0 5%;
+    margin-top: 5px;
 }
 
 .sale-img-l{
@@ -664,4 +663,3 @@ hr {
         font-size: 12px;
     }
 }
-

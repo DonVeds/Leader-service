@@ -184,19 +184,38 @@ img {
     }
 }
 
-.sale {
+.sale{
+    width: 100%;
+    float: left;
+    background-color: #c20000;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#c20000),
+        to(#f83600)
+    );
     background: linear-gradient(to right, #c20000, #f83600);
+    color: white;
+    margin-top: 20px;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     height: 80px;
     border: 1px solid black;
 }
-
-.sale h3{
-    margin-top: -0.625em;
-    text-shadow: black 0 0 5px;
-    padding: 0 5% 0 5%;
+.sale p {
+    margin-top: 5px;
+    font-size: 1.5em;
 }
+.sale h3 {
+    margin-bottom: 5px;
+    font-size: 2em;
+    margin-top: 6px; 
+    padding: 0 5% 0 5%;
+    text-shadow: black 0 0 5px;
+}
+
 
 .sale-img-l{
     width: 20%;
@@ -514,31 +533,7 @@ hr {
     border-right: 0;
     border-left: 0;
 }
-.sale {
-    width: 100%;
-    float: left;
-    background-color: #c20000;
-    background: -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        from(#c20000),
-        to(#f83600)
-    );
-    background: linear-gradient(to right, #c20000, #f83600);
-    color: white;
-    margin-top: 20px;
-    text-align: center;
-}
-.sale p {
-    margin-top: 5px;
-    font-size: 1.5em;
-}
-.sale h3 {
-    margin-bottom: 5px;
-    font-size: 2em;
-    margin-top: 20px;
-}
+
 .underline {
     color: white;
     text-decoration: underline;
@@ -663,3 +658,4 @@ hr {
         font-size: 12px;
     }
 }
+
